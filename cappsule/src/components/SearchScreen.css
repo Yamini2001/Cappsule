@@ -1,0 +1,169 @@
+.search-screen {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: auto; /* Centering the search screen horizontally */
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 2px 12px rgb(86, 85, 85);
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: calc(100% - 60px); /* Adjust width based on icon size and button width */
+  padding: 20px 20px 20px 40px; /* Adjust padding for icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-icon, .back-icon {
+  position: absolute;
+  left: 10px; /* Position icon on the left */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-button {
+  background-color: white;
+  color: navy;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -100px; /* Adjust margin to align button with input field */
+  font-weight: bold;
+}
+
+.search-button:hover {
+  font-weight: bold; /* Remove duplicate background-color and adjust font weight */
+}
+
+.discount-text {
+  text-align: center;
+  font-weight: bold; /* Adjust font weight */
+  color: rgb(161, 159, 159);
+  margin-top: 230px; /* Adjust margin top */
+  font-size: 18px;
+}
+
+.salt-suggestions {
+  border: none;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: rgb(228, 237, 228);
+  border-radius: 20px;
+  /* margin-right: 70px; */
+
+}
+
+/* .salt-suggestions {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+} */
+
+.salt-suggestions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.salt-suggestions li {
+  margin-bottom: 5px;
+}
+
+/* .salt-suggestions li span {
+  font-weight: bold;
+} */
+
+.salt-suggestions .form-buttons button {
+  margin-right: -5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #17684f;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: -20px;
+  box-shadow: 0 2px 4px #17684f;
+}
+
+.salt-suggestions .form-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.salt-suggestions .form-buttons button.injection {
+  background-color: #ffa500; /* Change background color for Injection button */
+  color: #fff; /* Change text color for Injection button */
+}
+
+.salt-suggestions .form-buttons button.injection:hover {
+  background-color: #ff8c00; /* Change hover background color for Injection button */
+}
+.salt-suggestions .strength-options {
+  display: flex;
+}
+
+.salt-suggestions .strength-options button {
+  margin-right: -60px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #17684f;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: -20px;
+  box-shadow: 0 2px 4px #17684f;
+}
+
+.salt-suggestions .strength-options button:hover {
+  background-color: #e0e0e0;
+}
+.salt-suggestions .packinging-options {
+  display: flex;
+}
+
+.salt-suggestions .packinging-options button {
+  margin-right: -80px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #17684f;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 90px;
+  margin-top: -20px;
+  box-shadow: 0 2px 4px #17684f;
+}
+
+.salt-suggestions .packing-options button:hover {
+  background-color: #e0e0e0;
+}
+.tablet-active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none; /* Add a red border to highlight */
+  margin: 25px;
+}
+.salt-name{
+  text-align: middle;
+  margin-left: 390px;
+  font-weight: bold;
+  margin-top: 90px;
+  font-size: 19px;
+}
