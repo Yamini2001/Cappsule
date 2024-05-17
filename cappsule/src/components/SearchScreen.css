@@ -146,7 +146,7 @@ input[type="text"] {
 .salt-name {
   font-weight: bold;
   font-size: 19px;
-  margin-top: 30px;
+  margin-top: 80px;
   height: 1px;
   text-align: center; /* Add this line to center the text */
 }
@@ -188,7 +188,7 @@ input[type="text"] {
 .para1 {
   text-align: center;
   margin: 5px;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-top: -10px;
 }
 
