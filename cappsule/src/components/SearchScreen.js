@@ -63,6 +63,21 @@ const MedicineSearch = () => {
     setSelectedPacking(packing);
   };
 
+  const renderPrice = (saltSuggestion) => {
+    const priceData = saltSuggestion.salt_forms_json[selectedForm]?.[selectedStrength]?.[selectedPacking];
+    
+    if (!priceData) {
+      return <div className='store'>No stores selling this product near you</div>;
+    }
+
+    if (priceData.selling_price >= 80) {
+      return <div>From ₹90</div>;
+    }
+
+    return <div>From ₹80</div>;
+  };
+
+
   return (
     <div className="search-screen">
       <h1>Medicine Search</h1>
@@ -148,16 +163,8 @@ const MedicineSearch = () => {
                     {saltSuggestion.most_common.Form} | {saltSuggestion.most_common.Strength} | {saltSuggestion.most_common.Packing}
                   </div>
                   <div className="price">
-                    {hasPacking ? (
-                      saltSuggestion.salt_forms_json[selectedForm][selectedStrength][selectedPacking].some(price => price.selling_price >= 80) ? (
-                        <div>From ₹90</div>
-                      ) : (
-                        <div>No stores selling this product near you</div>
-                      )
-                    ) : (
-                      <div>From ₹80</div>
-                    )}
-                  </div>
+                  {renderPrice(saltSuggestion)}
+                 </div>
                 </div>
               </div>
             );
