@@ -2,7 +2,6 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  margin-right: auto; /* Centering the search screen horizontally */
 }
 
 h1 {
@@ -65,20 +64,12 @@ input[type="text"] {
 }
 
 .salt-suggestions {
-  border: none;
-  margin-top: 10px;
-  padding: 15px;
-  background-color: rgb(228, 237, 228);
-  border-radius: 20px;
-  /* margin-right: 70px; */
-
+  background-color: rgb(240, 247, 240);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
 }
-
-/* .salt-suggestions {
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding: 10px;
-} */
 
 .salt-suggestions ul {
   list-style-type: none;
@@ -86,26 +77,37 @@ input[type="text"] {
 }
 
 .salt-suggestions li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-/* .salt-suggestions li span {
-  font-weight: bold;
-} */
+.salt-suggestions .label {
+  /* font-weight: bold; */
+  display: inline-block;
+  width: 80px;
+}
 
-.salt-suggestions .form-buttons button {
-  margin-right: -5px;
-  padding: 5px 10px;
+.salt-suggestions .form-buttons,
+.salt-suggestions .strength-options,
+.salt-suggestions .packing-options {
+  display: inline-block;
+}
+
+.salt-suggestions .form-buttons button,
+.salt-suggestions .strength-options button,
+.salt-suggestions .packing-options button {
+  margin: 7px 10px;
+  padding: 7px 10px;
   background-color: #f0f0f0;
   border: 1px solid #17684f;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 20px;
-  margin-top: -20px;
   box-shadow: 0 2px 4px #17684f;
+  margin-left: 19px;
 }
 
-.salt-suggestions .form-buttons button:hover {
+.salt-suggestions .form-buttons button:hover,
+.salt-suggestions .strength-options button:hover,
+.salt-suggestions .packing-options button:hover {
   background-color: #e0e0e0;
 }
 
@@ -117,53 +119,48 @@ input[type="text"] {
 .salt-suggestions .form-buttons button.injection:hover {
   background-color: #ff8c00; /* Change hover background color for Injection button */
 }
-.salt-suggestions .strength-options {
-  display: flex;
-}
 
-.salt-suggestions .strength-options button {
-  margin-right: -60px;
-  padding: 5px 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #17684f;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 70px;
-  margin-top: -20px;
-  box-shadow: 0 2px 4px #17684f;
-}
-
-.salt-suggestions .strength-options button:hover {
-  background-color: #e0e0e0;
-}
-.salt-suggestions .packinging-options {
-  display: flex;
-}
-
-.salt-suggestions .packinging-options button {
-  margin-right: -80px;
-  padding: 5px 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #17684f;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 90px;
-  margin-top: -20px;
-  box-shadow: 0 2px 4px #17684f;
-}
-
-.salt-suggestions .packing-options button:hover {
-  background-color: #e0e0e0;
-}
-.tablet-active {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: none; /* Add a red border to highlight */
-  margin: 25px;
-}
-.salt-name{
-  text-align: middle;
-  margin-left: 390px;
+.salt-name {
   font-weight: bold;
-  margin-top: 90px;
   font-size: 19px;
+  margin-top: 20px;
+  margin-left: 450px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  margin: 10px 0;
+}
+
+.flex-container > div {
+  font-size: 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* .para {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+} */
+
+.para1 {
+  text-align: center;
+  margin: 60px;
+  margin-left: 100px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%; /* Ensure it takes the full height of the parent */
+  margin-right: 20px; /* Adjust as needed for spacing */
+  margin-top: -80px;
 }
